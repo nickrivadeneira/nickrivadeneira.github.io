@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %meta{ content: "width=device-width, initial-scale=1.0", name: "viewport" }
+    %meta{ content: "IE=edge,chrome=1", 'http-equiv' => "X-UA-Compatible" }
+    %title Nick Rivadeneira
+    %link{ href: "//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", rel: "stylesheet" }
+    = stylesheet_link_tag "normalize", "all", "foundation.min"
+    = javascript_include_tag  "all"
+  %body{ class: page_classes }
+    = yield

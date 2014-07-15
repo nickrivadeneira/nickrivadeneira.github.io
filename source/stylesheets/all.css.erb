@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body, h1, h2, h3, h4, h5, h6, p {
+  color: #222;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+@media only screen {
+  .wrapper {
+    padding-top: 50px;
+  }
+
+  .bio {
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+  .wrapper {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 64.063em) {
+  .wrapper {
+    padding-top: 200px;
+  }
+}
+
+.photo {
+  text-align: center;
+}
+
+#profile {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  background: url("<%= asset_url "images/profile.jpg" %>") no-repeat;
+  background-size: cover;
+}
